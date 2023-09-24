@@ -2,53 +2,44 @@
 import { Picture } from "@astrojs/image/components";
 import heroImage from "assets/hero.png";
 import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
-    <Picture
-      src={heroImage}
-      alt="Astronaut in the air"
-      widths={[200, 400, 600]}
-      aspectRatio="4:3"
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-    />
-  </div>
+  class="place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      Dearborn Eats
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-      any website with this starter.
+    <br><br>
+    <p class="text-lg mt-4 text-slate-600">
+      To the Dearborn/Heights community:
+      <br><br>
+      Last year, our community spent a whopping $75 million on food delivery apps. But here's the catch – a staggering $9 million left our local economy as fees and commissions paid to companies like DoorDash, Uber Eats, and GrubHub. That's money slipping through our fingers and into the pockets of out-of-state corporations.
+      <br><br>
+      🏡 It's time to keep our dollars close to home! 🏡
+      <br><br>
+      Dearborn Eats is a homegrown food delivery marketplace dedicated to our community. 
+      <br><br>
+      🌟 Our mission? To ensure every single dollar stays right here in Dearborn/Heights, where it belongs.
+      <br><br>
+      🍽️ Imagine a platform where every local restaurant joins forces, ditching the big players. 🍽️
+      <br><br>
+      What's in it for everyone? 🤝
+      <br>
+      <br>✅ Restaurant owners pay lower commissions.
+      <br>✅ Drivers earn more with gas, car, and insurance stipends.
+      <br>✅ Eaters enjoy lower prices. 🤩
+      <br><br>
+      And here's the icing on the cake – complete transparency! You'll be able to see where the revenue dollars go. Our aim is to operate as a <a href="https://www.bcorporation.net/en-us/">B-Corp</a> which makes us responsible to the benefit of the community.
+      <br><br>
+      🚀 But here's where I need your help, dear community. 🚀
+      <br><br>
+      I'm on the lookout for visionary restaurant owners who share our dream. We're starting with 10 restaurants to kickstart this exciting journey!
+      <br><br>
+      Are you in? Let's make a difference together!
+      <br><br>
+      Send us an email: <a href="mailto:info@dearborneats.com">info@dearborneats.com</a>
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-        Download for Free
-      </Link>
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
-      </Link>
-    </div>
   </div>
 </main>
